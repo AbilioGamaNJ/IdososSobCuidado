@@ -1,5 +1,5 @@
 function ShowPassword(){
-    var inputPass = document.getElementById('password')
+    var inputPass = document.getElementById('passwordC')
     var btnShowPass = document.getElementById('btn-password')
 
     if(inputPass.type === 'password'){

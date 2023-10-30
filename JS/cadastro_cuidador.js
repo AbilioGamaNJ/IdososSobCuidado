@@ -1,5 +1,5 @@
 function ShowPassword(){
-    var inputPass = document.getElementById('password')
+    var inputPass = document.getElementById('passwordC')
     var btnShowPass = document.getElementById('btn-password')
 
     if(inputPass.type === 'password'){
@@ -12,7 +12,7 @@ function ShowPassword(){
 }
 
 function ShowConfirmPassword(){
-    var inputConfirmPass = document.getElementById('ConfirmPassword')
+    var inputConfirmPass = document.getElementById('ConfirmPasswordC')
     var btnShowConfirmPass = document.getElementById('btn-confirm-password')
 
     if(inputConfirmPass.type === 'password'){
