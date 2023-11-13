@@ -139,7 +139,7 @@ div i {
         display: none;
     }
     .container  {
-        width: 50%;
+        width: 40%;
     }
     .form {
         width: 100%;
@@ -148,7 +148,7 @@ div i {
 
 @media screen and (max-width: 1064px) {
     .container {
-        width: 60%;
+        width: 40%;
         height: auto;
     }
     .form {
