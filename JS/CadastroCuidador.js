@@ -1,3 +1,9 @@
+var nome_cuidador = document.getElementById("nome_cuidador")
+var celular_cuidador = document.getElementById("celular_cuidador")
+var cpf_cuidador = document.getElementById("cpf_cuidador")
+var senha_cuidador = document.getElementById("senha_cuidador")
+var confimar_senha_cuidador = document.getElementById("confirmar_senha_cuidador")
+
 function ShowPassword(){
     var inputPass = document.getElementById('passwordC')
     var btnShowPass = document.getElementById('btn-password')
