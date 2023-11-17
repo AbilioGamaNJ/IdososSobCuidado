@@ -54,7 +54,7 @@ var senha_cuidador = document.getElementById("senha_cuidador")
 }
 
 function ShowPassword(){
-    var inputPass = document.getElementById('passwordC')
+    var inputPass = document.getElementById('senha_cuidador')
     var btnShowPass = document.getElementById('btn-password')
 
     if(inputPass.type === 'password'){
@@ -67,7 +67,7 @@ function ShowPassword(){
 }
 
 function ShowConfirmPassword(){
-    var inputConfirmPass = document.getElementById('ConfirmPasswordC')
+    var inputConfirmPass = document.getElementById('confirmar_senha_cuidador')
     var btnShowConfirmPass = document.getElementById('btn-confirm-password')
 
     if(inputConfirmPass.type === 'password'){

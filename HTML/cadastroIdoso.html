@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/cadastro_cuidador.css">
+    <link rel="stylesheet" href="../CSS/cadastro-idoso.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <title>Cadastro Cuidador</title>
+    <title>Cadastro Idoso</title>
   </head>
   <body>
       <div class="container">
           <div class="form-image">
-            <img src="../img/undraw_doctors_p6aq.svg" alt="">
+            <img src="../img/undraw_grandma_re_rnv1.svg" alt="">
           </div>
           <div class="form">
               <form action="#">
@@ -22,42 +22,41 @@
                       <div class="input-group">
                           <div class="input-box">
                               <label for="allname">Nome Completo</label>
-                              <input id="nome_cuidador" type="text" name="allname" placeholder="Digite seu nome completo" required>
+                              <input id="allnameI" type="text" name="allname" placeholder="Digite seu nome completo" required>
                           </div>
 
                           <div class="input-box">    
                             <label for="email">E-mail</label>
-                            <input id="email_cuidador" type="email" name="email" placeholder="Digite seu email" required>
+                            <input id="emailI" type="email" name="email" placeholder="Digite seu email" required>
                           </div>
 
                           <div class="input-box">    
                             <label for="number">Celular</label>
-                            <input id="celular_cuidador" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                            <input id="numberI" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
                           </div>
 
                           <div class="input-box">    
                             <label for="cpf">Cpf</label>
-                            <input id="cpf_cuidador" type="text" name="cpf" placeholder="Digite seu número do cpf" required>
+                            <input id="cpfI" type="text" name="cpf" placeholder="Digite seu número do cpf" required>
                           </div>
-
                           <div class="input-box">    
                             <label for="password">Senha</label>
-                            <input id="senha_cuidador" type="password" name="password" placeholder="Digite sua senha" required>
+                            <input id="passwordI" type="password" name="password" placeholder="Digite sua senha" required>
                             <i class="bi bi-eye-fill" id="btn-password" onclick="ShowPassword()"></i>
                           </div>
 
                           <div class="input-box">    
                             <label for="ConfirmPassword">Confirmar Senha</label>
-                            <input id="confirmar_senha_cuidador" type="password" name="ConfirmPassword" placeholder="Confirme sua senha" required>
+                            <input id="ConfirmPasswordI" type="password" name="ConfirmPassword" placeholder="Confirme sua senha" required>
                             <i class="bi bi-eye-fill" id="btn-confirm-password" onclick="ShowConfirmPassword()"></i>
                           </div>
                       </div>
                       <div class="cadastrar-button">
-                        <button><a href="../HTML/login_cuidador.html">Cadastrar</a></button>
+                        <button><a href="../HTML/loginIdoso.html">Cadastrar</a></button>
                       </div>  
               </form>
           </div>
       </div>
-<script src="../JS/cadastro_cuidador.js"></script>
+<script src="../JS/CadastroIdoso.js"></script>
   </body>
 </html>
