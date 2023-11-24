@@ -3,15 +3,172 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
-body{
+/* body{
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+} */
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #07753A;
+    padding-inline: 16px;
+}
+
+.nav {
+    max-width: 1500px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 85px;
+    height: 70px;
+    margin-top: 8px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+}
+
+.hero {
+    height: calc(100vh - 70px);
+    background-color: #f7f5f5;
+}
+.hamburguer {
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    display: none;
+}
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position:relative;
+    transition: 0.3s;
+}
+
+.foto-nav{
+    border-radius: 50%;
+    content: "";
+    cursor: pointer;
+    height: 3rem;
+    position: fixed;
+    width: 3rem;
+}
+.foto-nav-container {
+    background: url(../img/UserPrime.png) no-repeat 50%/cover;
+    border-radius: 50%;
+    content: "";
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    position: relative;
+    width: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+    .hamburguer {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #07753A;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav-list a{
+        font-size: 30px;
+        opacity: 0;
+    }
+    .foto-nav, .foto-nav-container {
+        opacity: 0;
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .nav-list .foto-nav-container:nth-child(3) {
+        transition: 0.5s 0.2s;
+    }
+    .nav-list .foto-nav:nth-child(4) {
+        transition: 0.5s 0.2s;
+    }
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.6s;
+    }
+    
+
+    .nav.active .nav-list{
+        clip-path: circle(2500px at 90% -15%);
+        pointer-events: all;
+    }
+    .nav.active .nav-list a{
+        opacity: 1;
+    }
+    .nav.active .nav-list .foto-nav{
+        opacity: 1;
+    }
+    .nav.active .nav-list .foto-nav-container{
+        opacity: 1;
+    }
+
+    .nav.active .hamburguer {
+        position:fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 }
