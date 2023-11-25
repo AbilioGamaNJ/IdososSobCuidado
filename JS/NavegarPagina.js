@@ -13,3 +13,6 @@ function LoginIdosoNavigate(){
 function LogarPerfil(){
     window.location.href="./perfil.html"
 }
+function Logout() {
+    window.location.href="./index.html"
+}

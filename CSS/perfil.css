@@ -136,10 +136,7 @@ a {
     padding-block: 16px;
 }
 
-.hero {
-    height: calc(100vh - 70px);
-    background-color: #f7f5f5;
-}
+
 .hamburguer {
     border: none;
     background: none;
@@ -199,8 +196,186 @@ a {
     height: 2rem;
     position: relative;
     margin-left: 5px;
-    width: 2rem;
+    width: 2rem
 }
+
+                                                        /* Tudo pra cima é navbar */
+
+.hero {
+    height: calc(100vh - 70px);
+    background-color: #f7f5f5;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.perfil-container {
+    width: 50vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2% 2% 2% 2%;      
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, .212);
+}
+
+.perfil-header {
+    width: 100%;
+    height: 20vh;
+    border-radius: 7px 7px 0 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#1f8f51;
+ 
+   
+}
+
+.foto-nav-container-perfil {
+    background: url(../img/UserPrime.png) no-repeat 50%/cover;
+    border-radius: 50%;
+    content: "";
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 7rem;
+    position: relative;
+    margin-left: 8%;
+    width: 7rem;
+    z-index: 0;
+
+}
+
+.foto-nav-perfil{
+    border-radius: 50%;
+    content: "";
+    cursor: pointer;
+    height: 7rem;
+    position: fixed;
+    width: 7rem;
+    z-index: 0;
+}
+.cam-user-perfil {
+    height: 30px;
+    width: 30px;
+    color: rgb(226, 220, 220)
+
+}
+
+.line-perfil {
+    border: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.perfil-body {
+    width: 100%;
+    height: 75vh;
+    border-radius: 0 0 7px 7px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(236, 234, 234, 0.986);
+}
+
+
+.nome-usuario-perfil {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    width: 100%;
+    justify-content: center;
+}
+.email-usuario-perfil {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    width: 100%;
+    justify-content: center;;
+}
+.celular-usuario-perfil {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    width: 100%;
+    justify-content: center;
+}
+.descricao-usuario-perfil {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    width: 100%;
+    justify-content: center;
+}
+.senha-usuario-perfil {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    width: 100%;
+    justify-content: center;
+
+}
+.form-label-perfil {
+    font-size: 18px;
+}
+.input-form-perfil {
+    width: 80%;
+    border-radius: 4px;
+    box-shadow: 0.5px 0.5px 1px 1px rgba(0, 0, 0, 0.082);
+    border: 2px solid   rgba(8, 8, 8, 0.281); 
+    margin-bottom: 10px; 
+    font-size: 14px;
+    height: 20px;
+    
+} 
+.input-form-perfil:hover {
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.281);
+    margin-bottom: 10px; 
+    
+}
+.form-control {
+    width: 80%;
+    border-radius: 4px;
+    box-shadow: 0.5px 0.5px 1px 1px rgba(0, 0, 0, 0.082);
+    border: 2px solid   rgba(8, 8, 8, 0.281);  
+    margin-bottom: 10px; 
+    font-size: 14px;
+}
+.form-control:hover {
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.281);
+    margin-bottom: 10px; 
+}
+
+.textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.textarea:focus, textarea:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.form-buttons-perfil {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.button-perfil {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    
+    margin-right: 40px;
+    
+}
+
+
+
+
+
 @media  (max-width: 1400px) {
     #modal {
         top: 5.5vh;
@@ -209,7 +384,7 @@ a {
 @media screen and (max-width: 750px) {
     .hamburguer {
         display: block;
-        z-index: 1;
+        z-index: 2;
     }
     #modal {
        right: 32%;
@@ -232,6 +407,7 @@ a {
         align-items: center;
         gap: 0;
         pointer-events: none;
+        z-index: 1;
     }
 
     .nav-list a{
@@ -286,5 +462,8 @@ a {
     .nav.active .hamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+    .foto-nav-perfil, .foto-nav-container-perfil {
+        z-index: 0;
     }
 }
