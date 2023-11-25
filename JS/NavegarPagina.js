@@ -10,3 +10,6 @@ function LoginCuidadorNavigate(){
 function LoginIdosoNavigate(){
     window.location.href="./loginIdoso.html"
 }
+function LogarPerfil(){
+    window.location.href="./perfil.html"
+}
