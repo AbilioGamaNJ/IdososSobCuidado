@@ -100,9 +100,6 @@ a {
     color: #07753A;
 }
 
-
-
-
 .header {
     background-color: #07753A;
     padding-inline: 16px;
@@ -136,10 +133,7 @@ a {
     padding-block: 16px;
 }
 
-.hero {
-    height: calc(100vh - 70px);
-    background-color: #f7f5f5;
-}
+
 .hamburguer {
     border: none;
     background: none;
@@ -288,3 +282,54 @@ a {
         top: -7px;
     }
 }
+
+                                                        /* Parte da navbar */
+
+.hero {
+    height: calc(100vh - 70px);
+    background-color: #f7f5f5;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-about-site {
+    width: 700px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+}
+.text-h2 {
+    margin-top: 40px;
+    margin-right: 400px;
+    color: #000;
+}
+
+.text-h3 {
+    color:#000 ; 
+}
+.texto-apresetacao {
+    width: 100%;
+}
+.text-h2-apresentacao {
+    margin-right: 300px;
+}
+.player-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.video-youtube {
+    width: 700px;
+    height: 430px;
+}
+
+
