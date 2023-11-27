@@ -14,8 +14,8 @@ a {
     transition: 0.5s; 
     opacity: 1;
     pointer-events: all;
-
 }
+
 .randon-button {
     opacity: 0;
    
@@ -81,6 +81,7 @@ a {
 .modal-to-perfil:hover{
     background-color: #cdfae2;
 }
+
 .modal-logout-account:hover {
     background-color: #cdfae2;
 }
@@ -141,6 +142,7 @@ a {
     cursor: pointer;
     display: none;
 }
+
 .hamburguer::before,
 .hamburguer::after {
     content: " ";
@@ -161,6 +163,7 @@ a {
     position: fixed;
     width: 3rem;
 }
+
 .foto-nav-container {
     background: url(../img/UserPrime.png) no-repeat 50%/cover;
     border-radius: 50%;
@@ -174,6 +177,7 @@ a {
     width: 3rem;
     opacity: 1;
 }
+
 .foto-nav-modal{
     border-radius: 50%;
     content: "";
@@ -182,6 +186,7 @@ a {
     position: fixed;
     width: 2rem;
 }
+
 .foto-nav-container-modal {
     background: url(../img/UserPrime.png) no-repeat 50%/cover;
     border-radius: 50%;
@@ -205,6 +210,7 @@ a {
         display: block;
         z-index: 1;
     }
+
     #modal {
        right: 32%;
        top: 26.5%;
@@ -293,6 +299,7 @@ a {
     align-items: center;
     flex-direction: column;
 }
+
 .text-about-site {
     width: 700px;
     height: 20vh;
@@ -302,6 +309,7 @@ a {
     text-align:center;
     justify-content: center;
 }
+
 .text-h2 {
     margin-top: 40px;
     margin-right: 400px;
@@ -311,12 +319,15 @@ a {
 .text-h3 {
     color:#000 ; 
 }
+
 .texto-apresetacao {
     width: 100%;
 }
+
 .text-h2-apresentacao {
     margin-right: 300px;
 }
+
 .player-container {
     width: 100%;
     height: 70vh;
