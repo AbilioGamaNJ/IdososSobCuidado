@@ -10,6 +10,12 @@ a {
     text-decoration: none;
 }
 
+body {
+    background-color: #f7f5f5;
+    width: 100%;
+    height:auto;
+}
+
 #fade, #modal {
     transition: 0.5s; 
     opacity: 1;
@@ -49,8 +55,7 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .modal-to-perfil{
@@ -102,18 +107,14 @@ a {
 
 
 
-.header {
-    background-color: #07753A;
-    padding-inline: 16px;
-}
-
 .nav {
-    max-width: 1500px;
+    width: 100%;
     height: 70px;
-    margin-inline: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    position: fixed ;
+    background-color: #07753A;
+    z-index: 20;
 }
 
 .logo {
@@ -141,6 +142,7 @@ a {
     border-top: 3px solid #fff;
     cursor: pointer;
     display: none;
+    margin-top: 10px;
 }
 .hamburguer::before,
 .hamburguer::after {
@@ -161,6 +163,7 @@ a {
     height: 3rem;
     position: fixed;
     width: 3rem;
+    opacity: 0;
 }
 .foto-nav-container {
     background: url(../img/UserPrime.png) no-repeat 50%/cover;
@@ -174,6 +177,7 @@ a {
     position: relative;
     width: 3rem;
     opacity: 1;
+    
 }
 .foto-nav-modal{
     border-radius: 50%;
@@ -182,6 +186,7 @@ a {
     height: 2rem;
     position: fixed;
     width: 2rem;
+    opacity: 0;
 }
 .foto-nav-container-modal {
     background: url(../img/UserPrime.png) no-repeat 50%/cover;
@@ -204,12 +209,12 @@ a {
     height: 3rem;
     position: fixed;
     width: 3rem;
+    opacity: 0;
 }
 .foto-nav-container-feed {
     background: url(../img/UserPrime.png) no-repeat 50%/cover;
     border-radius: 50%;
     content: "";
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,6 +230,7 @@ a {
     z-index: 0;
     margin-top: 1%;
     background-color: #fff;
+    margin-top: 6%;
     display: flex;
     width: 600px;
     height: 150px;
@@ -232,6 +238,12 @@ a {
     box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, .212);
     justify-content: flex-start;
     align-items: center
+}
+.modal-body-feed{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
 }
 
 .click-to-feed{
@@ -259,12 +271,17 @@ a {
 
 
 
-.hero {
+/* .hero {
     height: calc(100vh - 70px);
     background-color: #f7f5f5;
+} */
+.container-feed {
     display: flex;
-    justify-content: center;
+    height: auto;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 
@@ -287,9 +304,7 @@ a {
 }
 
 #modalFeed {
-    position: fixed;
-    right: 1.6%;
-    top: 9vh;
+    position: relative;
     z-index: 0;
     background-color: #fff;
     width: 250px;
@@ -297,21 +312,127 @@ a {
     border-radius: 5% 0 5% 5%;   
     box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, .212);
 }
+.modal-body-feed{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+}
 
 #modalFeed.hideFeed, #fadeFeed.hideFeed {
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
 }
 
+.publicacao-body{
+    width: 600px;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 100px;
+    box-shadow: 0.5px 0.5px 1px 1px rgba(0, 0, 0, 0.082);
 
+}
+.publicacao-header {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
 
+.foto-nav-publicacao{
+    border-radius: 50%;
+    content: "";
+    cursor: pointer;
+    height: 2.5rem;
+    position: fixed;
+    width: 2.5rem;
+    opacity: 0;
+}
+.foto-nav-container-publicacao {
+    background: url(../img/Doutor-image.png) no-repeat 50%/cover;
+    border-radius: 50%;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    position: relative;
+    margin-left: 10px;
+    width: 2.5rem;
+}
 
+.publicacao-container-image {
+    width: 100%;
+    height: 65%;
+    background: url(../img/FisioteraupetaRemulo.jpg) no-repeat 50%/cover;
+}
+.publicacao-footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.container-icons {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.icons-publicacao {
+    height: 24px;
+    width: 24px;
+    margin-left: 12px;
+}
+.descrição-text-publicacao {
+    width: 100%;
+    height: 60%;
+}
+.text-descricacao-publicacao {
+    font-size: 16px;
+    margin-left: 10px;
+}
+.foto-nav-container-publicacao2 {
+    background: url(../img/Carolina.png) no-repeat 50%/cover;
+    border-radius: 50%;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    position: relative;
+    margin-left: 10px;
+    width: 2.5rem;
+}
 
+.publicacao-container-image2 {
+    width: 100%;
+    height: 65%;
+    background: url(../img/Cuidadora.jpg) no-repeat 50%/cover;
+}
 
+.foto-nav-container-publicacao3 {
+    background: url(../img/Vini.png) no-repeat 50%/cover;
+    border-radius: 50%;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    position: relative;
+    margin-left: 10px;
+    width: 2.5rem;
+}
 
-
-
-
+.publicacao-container-image3 {
+    width: 100%;
+    height: 65%;
+    background: url(../img/Fisio-Vinicius.jpg) no-repeat 50%/cover;
+}
 
 
 
@@ -322,6 +443,17 @@ a {
     #modal {
         top: 5.5vh;
     }
+    .feed-container {
+        margin-top: 6%;
+    }
+    
+}
+@media  (max-width: 1300px) {
+   
+    .feed-container {
+        margin-top: 7%;
+    }
+    
 }
 @media screen and (max-width: 750px) {
     .hamburguer {

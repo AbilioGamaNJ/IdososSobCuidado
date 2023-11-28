@@ -1,5 +1,5 @@
 var nome_cuidador = document.getElementById("nome_cuidador")
-var email_cuidador = documento.getElementById("email_cuidador")
+var email_cuidador = document.getElementById("email_cuidador")
 var celular_cuidador = document.getElementById("celular_cuidador")
 var cpf_cuidador = document.getElementById("cpf_cuidador")
 var senha_cuidador = document.getElementById("senha_cuidador")
@@ -49,6 +49,7 @@ var senha_cuidador = document.getElementById("senha_cuidador")
             } else {
               // alert("vazio")
             }}
+            return postCuidador;
 }
 
 function ShowPassword(){
@@ -75,4 +76,5 @@ function ShowConfirmPassword(){
         inputConfirmPass.setAttribute('type', 'password')
         btnShowConfirmPass.classList.replace('bi-eye-slash-fill', 'bi-eye-fill',)
     }
+    
 }
