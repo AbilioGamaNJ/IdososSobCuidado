@@ -14,6 +14,9 @@ body {
     background-color: #f7f5f5;
     width: 100%;
     height:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #fade, #modal {
@@ -265,9 +268,6 @@ body {
     color: #42bb78 ;
     font-size: 20px;
 }
-.randon-button-feed {
-    opacity: 0;
-} 
 
 
 
@@ -285,12 +285,17 @@ body {
 }
 
 
+
+
 #fadeFeed, #modalFeed {
     transition: 0.5s; 
     opacity: 1;
     pointer-events: all;
-
 }
+
+.randon-button-feed {
+    opacity: 0;
+} 
 
 
 #fadeFeed {
@@ -299,17 +304,18 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 6;
     display: flex;
 }
 
 #modalFeed {
+    margin-top: 20px;
     position: relative;
-    z-index: 0;
+    z-index: 12;
     background-color: #fff;
-    width: 250px;
-    height: 150px;
-    border-radius: 5% 0 5% 5%;   
+    width: 600px;
+    height: 300px;
+    border-radius: 5% 5% 5% 5%;   
     box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, .212);
 }
 .modal-body-feed{
@@ -317,11 +323,106 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;  
+    width: 100%;
+    height: 100%;
 }
 
 #modalFeed.hideFeed, #fadeFeed.hideFeed {
     opacity: 1;
     pointer-events: none;
+}
+.modal-feed-header{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-feed-mid{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    
+}
+.modal-feed-descricao {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.textArea-feed {
+    width: 96%;
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border:none;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 18px;
+}
+
+.change-color-text{
+    font-size: 18px;
+    color: #07753A;
+    margin-left: 10px;
+}
+
+.capture-photo {
+    color:#07753A;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+.x-close-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.x-close-icon:hover{
+    color:#07753A;
+}
+.textArea-feed:hover {
+    background-color: #cdfae2;
+}
+
+.modal-feed-footer{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.publicar-postagem-button {
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    box-shadow: 0.5px 0.5px 1px 1px rgba(0, 0, 0, 0.082);
+    margin-right: 10px;
+    border: 2px solid   rgba(8, 8, 8, 0.281);
+    border-radius: 15px;
+}
+
+.publicar-postagem-button:hover {
+    background-color: #cdfae2;
+}
+
+
+
+
+
+
+
+.container-publicacoes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
 }
 
 .publicacao-body{

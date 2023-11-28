@@ -8,7 +8,7 @@
     <script defer src="../JS/Responsividade.js"></script>
     <script defer src="../JS/PerfilModal.js"></script>
     <script src="../JS/NavegarPagina.js"></script>
-    <script src="../JS/FeedModal.js"></script>
+    <script defer src="../JS/FeedModal.js"></script>
   </head>
   <body>
     <header class="header">
@@ -43,6 +43,8 @@
                 </div>
                 </div>
               </div>
+            </div>
+          </div>
         </nav>
       </header>
                                                         <!-- Daqui pra cima é Navbar -->
@@ -64,16 +66,30 @@
           <div id="fadeFeed" class="hideFeed"></div>
           <div id="modalFeed" class="hideFeed">
               <div class="modal-body-feed">
-               <div class="modal-to-perfil"  >
-                <div  class="foto-nav-container-modal-feed">
-                  <img class="foto-nav-modal">
+              <div class="modal-feed-header">
+                <div class="text-header-modal">
+                  <p class="change-color-text">Criar Publicação</p>
                 </div>
-                <div class="text-modal-perfil">
-                  <p>Perfil</p>
+                <svg  xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="x-close-icon" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </div>
+              <div class="modal-feed-mid">
+                <div class="modal-feed-descricao">
+                  <textarea style="resize: none" class="textArea-feed" rows="3" placeholder="Descrição da publicação"></textarea>
                 </div>
+              </div>
+              <div class="modal-feed-footer">
+                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="capture-photo" viewBox="0 0 16 16">
+                  <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                  <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12"/>
+                </svg>
+                <button class="publicar-postagem-button">Publicar</button>            
+              </div>
                </div>
               </div>
             </div>
+            <div class="container-publicacoes">
             <div class="publicacao-body">
               <div class="publicacao-header">
                 <div  class="foto-nav-container-publicacao">
@@ -165,7 +181,7 @@
                 </div>
               </div>
             </div>
-          
+          </div>
           </div>
       
       
