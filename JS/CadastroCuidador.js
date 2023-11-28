@@ -11,42 +11,40 @@ var senha_cuidador = document.getElementById("senha_cuidador")
         const [email_cuidador, setEmail_cuidador] = useState("");
         const [celular_cuidador, setCelular_cuidador] = useState("");
         const [cpf_cuidador, setCpf_cuidador] = useState("");
-        const [senha__cuidador, setSenha_cuidador] = useState("");
+        const [senha_cuidador, setSenha_cuidador] = useState("");
       
-         const callAgentFinder = async() => {
-           try{
-                const response = await fetch('http://localhost:3001/api/user')
-                const data = response.json()
-             data.then(
-                  (val) => {setUsers(val.data)
+        //  const callAgentFinder = async() => {
+        //    try{
+        //         const response = await fetch('http://localhost:3001/api/cuidador')
+        //         const data = response.json()
+        //      data.then(
+        //           (val) => {setCuidador(val.data)
       
-                   }
-                )
-            }catch(error){
-            }
-         }
+        //            }
+        //         )
+        //     }catch(error){
+        //     }
+        //  }
 
-         const postUser = async () => {
-            if (nome_cuidador !== "" && email_cuidador !== "" && celular_cuidador !== "" && cpf_cuidador !== "" && senha__cuidador !== "" ) {
+         const postCuidador = async () => {
+            if (nome_cuidador !== "" && email_cuidador !== "" && celular_cuidador !== "" && cpf_cuidador !== "" && senha_cuidador !== "" ) {
               try {
                 const requestOptions = {
                   method: "POST",
                   headers: { "Content-type": "application/json" },
                   body: JSON.stringify({
-                    username: username,
-                    name: name,
-                    email: email,
-                    password: password,
+                    nome_cuidador: nome_cuidador,
+                    email_cuidador: email_cuidador,
+                    celular_cuidador: celular_cuidador,
+                    cpf_cuidador: cpf_cuidador,
+                    senha_cuidador: senha_cuidador
                   }),
                 };
-                await fetch("http://localhost:3001/api/user", requestOptions);
-                window.location.href = "./login";
+                await fetch("http://localhost:3001/api/cuidador", requestOptions);
+                window.location.href = "./loginCuidador.html";
               } catch (error) {
                 console.log(error);
-                setUsername("");
-                setName("");
-                setEmail("");
-                setPassword("");
+              
               }
             } else {
               // alert("vazio")
