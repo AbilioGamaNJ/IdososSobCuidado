@@ -8,6 +8,7 @@
     <script defer src="../JS/Responsividade.js"></script>
     <script defer src="../JS/PerfilModal.js"></script>
     <script src="../JS/NavegarPagina.js"></script>
+    <script src="../JS/FeedModal.js"></script>
   </head>
   <body>
     <header class="header">
@@ -46,9 +47,31 @@
       </header>
                                                         <!-- Daqui pra cima é Navbar -->
       <main class="hero">
-       
-      </main>
+        <div class="feed-container">
+               <div class="click-to-feed" >
+                <div  class="foto-nav-container-feed">
+                  <button class="randon-button-feed" id="open-modal-feed"></button>
+                  <img class="foto-nav-feed" id="close-modal-feed">
+                </div>
+                <div class="text-feed">
+                  <p>Criar publicação</p>
+                </div>
+               </div>
+              </div>
 
+              <div id="fadeFeed" class="hideFeed"></div>
+          <div id="modalFeed" class="hideFeed">
+              <div class="modal-body">
+               <div class="modal-to-perfil" onclick="LogarPerfil()" >
+                <div  class="foto-nav-container-modal-feed">
+                  <img class="foto-nav-modal">
+                </div>
+                <div class="text-modal-perfil">
+                  <p>Perfil</p>
+                </div>
+               </div>
+              </div>
+      </main>
 
   </body>
 </html>

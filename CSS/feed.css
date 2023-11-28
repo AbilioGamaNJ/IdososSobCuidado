@@ -16,10 +16,7 @@ a {
     pointer-events: all;
 
 }
-.randon-button {
-    opacity: 0;
-   
-}
+
 
 #fade {
     position: fixed;
@@ -27,7 +24,7 @@ a {
     right: 0;
     width: 100%;
     height: 100%;
-    z-index: 5;
+    z-index: 2;
     display: flex;
 }
 
@@ -85,7 +82,9 @@ a {
     background-color: #cdfae2;
 }
 
-
+.randon-button {
+    opacity: 0;
+}
 .sair-icon{
     margin-left: 5px;
     
@@ -136,10 +135,6 @@ a {
     padding-block: 16px;
 }
 
-.hero {
-    height: calc(100vh - 70px);
-    background-color: #f7f5f5;
-}
 .hamburguer {
     border: none;
     background: none;
@@ -201,6 +196,128 @@ a {
     margin-left: 5px;
     width: 2rem;
 }
+
+.foto-nav-feed{
+    border-radius: 50%;
+    content: "";
+    cursor: pointer;
+    height: 3rem;
+    position: fixed;
+    width: 3rem;
+}
+.foto-nav-container-feed {
+    background: url(../img/UserPrime.png) no-repeat 50%/cover;
+    border-radius: 50%;
+    content: "";
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    position: relative;
+    margin-left: 5px;
+    width: 3rem;
+}
+
+
+
+.feed-container {
+    z-index: 0;
+    margin-top: 1%;
+    background-color: #fff;
+    display: flex;
+    width: 600px;
+    height: 150px;
+    border-radius: 20px;   
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, .212);
+    justify-content: flex-start;
+    align-items: center
+}
+
+.click-to-feed{
+    margin-left: 2%;
+    width: 540px;
+    border: 2px solid   rgba(8, 8, 8, 0.281);  
+    border-radius: 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 1px 1px rgba(0, 0, 0, 0.082);
+    gap: 15px;
+    cursor: pointer;
+}
+.click-to-feed:hover{
+    background-color: #cdfae2;
+}
+.text-modal-feed {
+    color: #42bb78 ;
+    font-size: 20px;
+}
+.randon-button-feed {
+    opacity: 0;
+} 
+
+
+
+.hero {
+    height: calc(100vh - 70px);
+    background-color: #f7f5f5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#fadeFeed, #modalFeed {
+    transition: 0.5s; 
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+
+#fadeFeed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+}
+
+#modalFeed {
+    position: fixed;
+    right: 1.6%;
+    top: 9vh;
+    z-index: 0;
+    background-color: #fff;
+    width: 250px;
+    height: 150px;
+    border-radius: 5% 0 5% 5%;   
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, .212);
+}
+
+#modalFeed.hideFeed, #fadeFeed.hideFeed {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media  (max-width: 1400px) {
     #modal {
         top: 5.5vh;
@@ -209,13 +326,16 @@ a {
 @media screen and (max-width: 750px) {
     .hamburguer {
         display: block;
-        z-index: 1;
+        z-index: 3;
     }
     #modal {
        right: 32%;
        top: 26.5%;
        border-radius: 5% 5% 5% 5%;  
        
+    }
+    .feed-container {
+        z-index: 0;
     }
 
     .nav-list {
@@ -232,6 +352,7 @@ a {
         align-items: center;
         gap: 0;
         pointer-events: none;
+        z-index: 1;
     }
 
     .nav-list a{
@@ -288,3 +409,5 @@ a {
         top: -7px;
     }
 }
+
+
