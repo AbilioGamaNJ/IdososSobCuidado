@@ -14,5 +14,7 @@ function LogarPerfil(){
     window.location.href="./perfil.html"
 }
 function Logout() {
-    window.location.href="../../IdososSobCuidado/index.html"
+    window.location.href="../index.html"
 }
+
+// window.location.href="../../IdososSobCuidado/index.html"
