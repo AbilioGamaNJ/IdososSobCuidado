@@ -7,7 +7,20 @@ const toggleModalFeed = () => {
     modalFeed.classList.toggle("hideFeed");
 }
 
-[openModalFeedButton, closeModalFeedButton, fadeFeed].forEach((el) => {
-    el.addEventListener("click", () => toggleModalFeed());
+[openModalFeedButton, closeModalFeedButton, fadeFeed].forEach((element) => {
+    element.addEventListener("click", () => toggleModalFeed());
 }); 
 
+const openModalButton = document.querySelector("#open-modal");
+const closeModalButton = document.querySelector("#close-modal");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
+
+const toggleModal = () => {
+    fade.classList.toggle("hide");
+    modal.classList.toggle("hide");
+}
+
+[openModalButton, closeModalButton, fade].forEach((el) => {
+    el.addEventListener("click", () => toggleModal());
+});
