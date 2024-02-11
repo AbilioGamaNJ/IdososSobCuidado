@@ -514,6 +514,9 @@ body {
   height: 65%;
   background: url(../img/Fisio-Vinicius.jpg) no-repeat 50% / cover;
 }
+.randon-button-feed{
+  opacity: 0;
+}
 
 @media (max-width: 1400px) {
   #modal {
