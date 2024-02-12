@@ -22,14 +22,15 @@
 }
 
 .header {
-  width: 100%;
+  width:100%;
   height: 10vh;
-  padding:10px;
+  padding: 20px 20px 20px 20px;
   background-color: #07753a;
   display: flex;
   align-items: center;
   flex-direction: row;
   z-index: 100;
+  justify-content: space-between;
 }
 .container-body {
   width: 100%;
@@ -37,6 +38,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 100px;
 }
 
 .text-logo {
@@ -99,9 +101,7 @@
   gap: 20px;
 }
 
-.width-div {
-  width: 100%;
-}
+
 
 .line-landingPage {
   border: 1px  solid rgba(255, 255, 255, 0.692);
@@ -138,7 +138,17 @@
   .big-logo{
     margin-top: 4vh;
   }
+}
+  @media(max-width: 1134px) {
+    .big-logo{
+      margin-top: 8vh;
   }
+}
+@media(max-width: 1018px) {
+  .big-logo{
+    margin-top: 12vh;
+  }
+}
 @media(max-width: 960px) {
   .container-body {
     width: 100%;
@@ -147,26 +157,68 @@
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
-  }
+    }
   .big-logo{
     margin-top: 0vh;
   }
- 
+}
+@media(max-width: 674px) {
+  .espacamento-div{
+    height: 10px;
   }
-  @media(max-width: 1134px) {
-    .big-logo{
-      margin-top: 8vh;
-    }
+}
+@media(max-width: 545px) {
+  .header {
+    width: 110%;
   }
-  @media(max-width: 1018px) {
-    .big-logo{
-      margin-top: 12vh;
-    }
+  .container-body {
+    width: 110%;
   }
-  @media(max-width: 674px) {
-
-    .espacamento-div{
-      height: 10px;
-    }
-    
+  .line-landingPage {
+    width: 110%;
   }
+}
+@media(max-width: 455px) {
+  .header {
+    width: 120%;
+  }
+  .container-body {
+    width: 120%;
+  }
+  .line-landingPage {
+    width: 120%;
+  }
+}
+@media(max-width: 435px) {
+  .header {
+    width: 125%;
+  }
+  .container-body {
+    width: 125%;
+  }
+  .line-landingPage {
+    width: 125%;
+  }
+}
+@media(max-width: 395px) {
+  .header {
+    width: 135%;
+  }
+  .container-body {
+    width: 135%;
+  }
+  .line-landingPage {
+    width: 135%;
+  }
+}
+@media(max-width: 385px) {
+  .header {
+    width: 140%;
+  }
+  .container-body {
+    width: 140%;
+  }
+  .line-landingPage {
+    width: 140%;
+  }
+}
