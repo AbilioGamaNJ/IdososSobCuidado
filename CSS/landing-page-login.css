@@ -33,6 +33,7 @@ body{
     text-align: center;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .212);
     background-color: #fff;
+    border-radius: 20px;
     
 }
 .form-image-doctor {
@@ -44,6 +45,7 @@ body{
     text-align: center;
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .212);
     background-color: #fff;
+    border-radius: 20px;
     
 }
 .image-grandma {
