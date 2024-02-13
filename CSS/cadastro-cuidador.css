@@ -218,7 +218,7 @@ div i {
   }
   .container {
     width: 60%;
-    height: 95%;
+    height: 100%;
     display: flex;
     justify-content: center;
   }
