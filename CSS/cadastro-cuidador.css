@@ -230,10 +230,15 @@ div i {
 @media (max-width: 430px) {
   .container {
     width: 70%;
-    height: 80%;
+    height: 103%;
     display: flex;
     justify-content: center;
   }
+  .form-header {
+    margin-bottom: 0;
+    margin-top: 30%;
+  }
+  
   
 }
 @media (max-width: 395px) {
@@ -262,7 +267,7 @@ div i {
 @media (max-width: 365px) {
   .container {
     width: 100%;
-    height: 96%;
+    height: 100%;
     display: flex;
     justify-content: center;
   }

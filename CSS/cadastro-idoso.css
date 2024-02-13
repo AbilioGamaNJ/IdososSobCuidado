@@ -218,7 +218,7 @@ div i {
   }
   .container {
     width: 60%;
-    height: 95%;
+    height: 100%;
     display: flex;
     justify-content: center;
   }
@@ -230,16 +230,21 @@ div i {
 @media (max-width: 430px) {
   .container {
     width: 70%;
-    height: 80%;
+    height: 103%;
     display: flex;
     justify-content: center;
   }
+  .form-header {
+    margin-bottom: 0;
+    margin-top: 30%;
+  }
+  
   
 }
 @media (max-width: 395px) {
   .container {
     width: 100%;
-    height: 90%;
+    height: 120%;
     display: flex;
     justify-content: center;
   }
@@ -253,16 +258,16 @@ div i {
   }
   .form-header {
     margin-bottom: 0;
-    margin-top: 40px;
+    margin-top: 50%;
   }
   .cadastrar-button {
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 365px) {
   .container {
     width: 100%;
-    height: 96%;
+    height: 100%;
     display: flex;
     justify-content: center;
   }
