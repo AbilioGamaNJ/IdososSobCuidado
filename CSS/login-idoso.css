@@ -134,7 +134,7 @@ div i {
     color: #fff;
 }
 
-@media screen and (max-width: 1330px){
+@media(max-width: 1330px){
     .form-image {
         display: none;
     }
@@ -146,14 +146,21 @@ div i {
     }
 }
 
-@media screen and (max-width: 1064px) {
+@media(max-width: 1024px) {
     .container {
         width: 40%;
-        height: auto;
+        height: 52%;
     }
     .form {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+}
+@media(max-width: 1064px) {
+    .container {
+        width: 40%;
+        height: 58%;
+    }
+   
 }
