@@ -49,10 +49,10 @@ body{
     
 }
 .image-grandma {
-    width: 80%;
+    width: 60%;
 }
 .image-doctor {
-    width: 80%;
+    width: 60%;
 }
 
 .form-image-grandma:hover {
@@ -78,11 +78,7 @@ body{
     margin-inline-end: 0px;
     font-weight: bold;
   }
-@media(max-width: 2618px) {
-    .size-change {
-    font-size: 4em;
-    }
-}
+
 @media(max-width: 1024px) {
     .container {
         width: 80%;
@@ -92,12 +88,12 @@ body{
         justify-content: space space-around;
         align-items: center;
     }
-    .form-image-doctor {
+    /* .form-image-doctor {
         width: 100%; 
     }
     .form-image-grandma{
         width: 100%; 
-    }
+    } */
 }
 @media(max-width: 768px) {
     .container {
